@@ -10,16 +10,17 @@ public class GameController : MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update() {
 
         if (Input.GetKey(KeyCode.UpArrow))
-            autobus.GetComponent<Transform>().transform.Translate(Vector3.forward * 3);
+            autobus.GetComponent<Transform>().transform.Translate(Vector3.forward * 1);
 
+  
 
         if (Input.GetKey(KeyCode.DownArrow))
-            autobus.GetComponent<Transform>().transform.Translate(Vector3.back *3);
+            autobus.GetComponent<Transform>().transform.Translate(Vector3.back *1);
 
     }
 
